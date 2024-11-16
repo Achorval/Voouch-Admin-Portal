@@ -1,0 +1,86 @@
+/* src/styles/modal.css */
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  
+  /* Content animations */
+  .ReactModal__Content {
+    transition: transform 300ms ease-in-out;
+  }
+  
+  /* Right */
+  .ReactModal__Content--slide-right {
+    transform: translateX(100%);
+  }
+  
+  .ReactModal__Content--slide-right.ReactModal__Content--after-open {
+    transform: translateX(0);
+  }
+  
+  .ReactModal__Content--slide-right.ReactModal__Content--before-close {
+    transform: translateX(100%);
+  }
+  
+  /* Left */
+  .ReactModal__Content--slide-left {
+    transform: translateX(-100%);
+  }
+  
+  .ReactModal__Content--slide-left.ReactModal__Content--after-open {
+    transform: translateX(0);
+  }
+  
+  .ReactModal__Content--slide-left.ReactModal__Content--before-close {
+    transform: translateX(-100%);
+  }
+  
+  /* Top */
+  .ReactModal__Content--slide-top {
+    transform: translateY(-100%);
+  }
+  
+  .ReactModal__Content--slide-top.ReactModal__Content--after-open {
+    transform: translateY(0);
+  }
+  
+  .ReactModal__Content--slide-top.ReactModal__Content--before-close {
+    transform: translateY(-100%);
+  }
+  
+  /* Bottom */
+  .ReactModal__Content--slide-bottom {
+    transform: translateY(100%);
+  }
+  
+  .ReactModal__Content--slide-bottom.ReactModal__Content--after-open {
+    transform: translateY(0);
+  }
+  
+  .ReactModal__Content--slide-bottom.ReactModal__Content--before-close {
+    transform: translateY(100%);
+  }
+  
+  /* Center */
+  .ReactModal__Content--zoom-center {
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0;
+  }
+  
+  .ReactModal__Content--zoom-center.ReactModal__Content--after-open {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  .ReactModal__Content--zoom-center.ReactModal__Content--before-close {
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0;
+  }
